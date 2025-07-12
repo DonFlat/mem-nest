@@ -1,16 +1,5 @@
-# Compiled class file
+# Java and general build artifacts
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +7,56 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+*.log
+*.ctxt
+.mtj.tmp/
+# JVM crash logs
 hs_err_pid*
 replay_pid*
+
+# Node.js
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Rust
+/target/
+Cargo.lock
+
+# Go
+/bin/
+*.exe
+
+# IDE settings
+.idea/
+.vscode/
+
+# Maven / Gradle
+.mvn/
+settings.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+pom.xml.bak
+
+# Gradle
+.gradle/
+build/
+
+# Others
+.DS_Store
+Thumbs.db
