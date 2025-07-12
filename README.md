@@ -1,23 +1,24 @@
 # Full Stack Hello World
 
-This project provides a minimal Node.js backend and a simple frontend written in TypeScript.
+This project provides a minimal Rust backend and a simple frontend written in
+TypeScript.
 
 ## Features
-- **Backend**: Express server serving `/api/hello` endpoint.
+- **Backend**: Actix-web server exposing `/api/hello` and serving static files from `public/`.
 - **Frontend**: Static page fetching the hello message.
 
 ## Getting Started
 
-1. Install dependencies (requires Node.js and npm):
+1. Install Node.js dependencies for TypeScript compilation (requires Node.js and npm):
    ```bash
    npm install
    ```
-2. (Optional) Compile TypeScript if you change files in `src/`:
+2. (Optional) Compile TypeScript if you modify files in `src/`:
    ```bash
    npx tsc
    ```
-3. Start the server:
+3. Run the Rust server (requires Rust toolchain):
    ```bash
-   node server.js
+   cargo run --manifest-path server/Cargo.toml
    ```
 4. Visit `http://localhost:3000` in your browser.
