@@ -1,11 +1,10 @@
 # Full Stack Hello World
 
 This project provides a minimal Rust backend and a simple frontend written in
-TypeScript.
 
 ## Features
-- **Backend**: Actix-web server exposing `/api/hello` and serving static files from `public/`.
-- **Frontend**: Static page fetching the hello message.
+- **Backend**: Actix-web server exposing `/api/hello` and `/api/upload` endpoints while serving static files from `public/`.
+- **Frontend**: Static page fetching the hello message and allowing Excel uploads.
 
 ## Getting Started
 
@@ -22,3 +21,4 @@ TypeScript.
    cargo run --manifest-path server/Cargo.toml
    ```
 4. Visit `http://localhost:3000` in your browser.
+5. Use the upload form to select an `.xlsx` file and view the data.
