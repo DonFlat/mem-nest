@@ -1,0 +1,16 @@
+{
+  "name": "mem-nest",
+  "version": "1.0.0",
+  "description": "Hello world full stack example",
+  "scripts": {
+    "start": "cargo run --manifest-path server/Cargo.toml",
+    "build": "tsc",
+    "test": "echo \"No tests\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
