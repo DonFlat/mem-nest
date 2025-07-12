@@ -1,8 +1,6 @@
 # Full Stack Hello World
 
 This project provides a minimal Rust backend and a simple frontend written in
-TypeScript. You can upload an Excel spreadsheet and the contents of its first
-sheet will be displayed in a table.
 
 ## Features
 - **Backend**: Actix-web server exposing `/api/hello` and `/api/upload` endpoints while serving static files from `public/`.

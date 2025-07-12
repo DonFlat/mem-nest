@@ -44,16 +44,4 @@ async fn upload(mut payload: Multipart) -> actix_web::Result<HttpResponse> {
 
     Ok(HttpResponse::Ok().json(data))
 }
-
-#[actix_web::main]
-async fn main() -> std::io::Result<()> {
-    HttpServer::new(|| {
-        App::new()
-            .service(hello)
             .service(upload)
-            .service(fs::Files::new("/", "public").index_file("index.html"))
-    })
-    .bind(("0.0.0.0", 3000))?
-    .run()
-    .await
-}
